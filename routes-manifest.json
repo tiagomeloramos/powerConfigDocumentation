@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/powerConfigDocumentation",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/powerConfigDocumentation/",
-      "destination": "/powerConfigDocumentation",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/powerConfigDocumentation/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -89,15 +81,5 @@
     "pathHeader": "x-nextjs-rewritten-path",
     "queryHeader": "x-nextjs-rewritten-query"
   },
-  "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/powerConfigDocumentation//_next/:path+",
-        "destination": "/powerConfigDocumentation/_next/:path+",
-        "regex": "^/powerConfigDocumentation//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
-    "afterFiles": [],
-    "fallback": []
-  }
+  "rewrites": []
 }
