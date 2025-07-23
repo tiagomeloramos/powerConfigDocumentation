@@ -1,10 +1,10 @@
 {
   "/_not-found/page": "/_not-found",
-  "/node/alert/page": "/node/alert",
-  "/node/visibility/page": "/node/visibility",
   "/node/required/page": "/node/required",
+  "/node/alert/page": "/node/alert",
+  "/node/condition/page": "/node/condition",
   "/node/validation/page": "/node/validation",
-  "/page": "/",
   "/node/value/page": "/node/value",
-  "/node/condition/page": "/node/condition"
+  "/page": "/",
+  "/node/visibility/page": "/node/visibility"
 }
