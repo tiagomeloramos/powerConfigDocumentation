@@ -3,8 +3,8 @@
   "/node/alert/page": "/node/alert",
   "/node/required/page": "/node/required",
   "/node/condition/page": "/node/condition",
-  "/node/visibility/page": "/node/visibility",
-  "/node/value/page": "/node/value",
   "/page": "/",
-  "/node/validation/page": "/node/validation"
+  "/node/value/page": "/node/value",
+  "/node/validation/page": "/node/validation",
+  "/node/visibility/page": "/node/visibility"
 }
