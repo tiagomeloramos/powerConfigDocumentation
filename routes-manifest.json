@@ -2,15 +2,15 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/powerConfigDocumentation/server/app",
+  "basePath": "/powerConfigDocumentation",
   "redirects": [
     {
-      "source": "/powerConfigDocumentation/server/app/",
-      "destination": "/powerConfigDocumentation/server/app",
+      "source": "/powerConfigDocumentation/",
+      "destination": "/powerConfigDocumentation",
       "basePath": false,
       "internal": true,
       "statusCode": 308,
-      "regex": "^/powerConfigDocumentation/server/app/$"
+      "regex": "^/powerConfigDocumentation/$"
     },
     {
       "source": "/:path+/",
@@ -92,9 +92,9 @@
   "rewrites": {
     "beforeFiles": [
       {
-        "source": "/powerConfigDocumentation/server/app//_next/:path+",
-        "destination": "/powerConfigDocumentation/server/app/_next/:path+",
-        "regex": "^/powerConfigDocumentation/server/app//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+        "source": "/powerConfigDocumentation//_next/:path+",
+        "destination": "/powerConfigDocumentation/_next/:path+",
+        "regex": "^/powerConfigDocumentation//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
       }
     ],
     "afterFiles": [],

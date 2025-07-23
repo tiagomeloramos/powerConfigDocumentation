@@ -12,7 +12,7 @@
     },
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "/powerConfigDocumentation/server/app/",
+    "assetPrefix": "/powerConfigDocumentation/",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.js",
     "useFileSystemPublicRoutes": true,
@@ -46,7 +46,7 @@
         256,
         384
       ],
-      "path": "/powerConfigDocumentation/server/app/_next/image",
+      "path": "/powerConfigDocumentation/_next/image",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -69,9 +69,9 @@
       "pagesBufferLength": 5
     },
     "amp": {
-      "canonicalBase": "/powerConfigDocumentation/server/app"
+      "canonicalBase": "/powerConfigDocumentation"
     },
-    "basePath": "/powerConfigDocumentation/server/app",
+    "basePath": "/powerConfigDocumentation",
     "sassOptions": {},
     "trailingSlash": false,
     "i18n": null,
