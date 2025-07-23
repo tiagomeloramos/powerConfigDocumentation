@@ -2,8 +2,16 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/server/app",
   "redirects": [
+    {
+      "source": "/server/app/",
+      "destination": "/server/app",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/server/app/$"
+    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -81,5 +89,15 @@
     "pathHeader": "x-nextjs-rewritten-path",
     "queryHeader": "x-nextjs-rewritten-query"
   },
-  "rewrites": []
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/server/app//_next/:path+",
+        "destination": "/server/app/_next/:path+",
+        "regex": "^/server/app//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
+    "afterFiles": [],
+    "fallback": []
+  }
 }
