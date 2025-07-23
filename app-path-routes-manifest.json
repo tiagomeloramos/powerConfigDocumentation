@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/node/alert/page": "/node/alert",
+  "/node/condition/page": "/node/condition",
+  "/node/value/page": "/node/value",
+  "/node/validation/page": "/node/validation",
+  "/node/required/page": "/node/required",
+  "/node/visibility/page": "/node/visibility",
+  "/page": "/"
+}

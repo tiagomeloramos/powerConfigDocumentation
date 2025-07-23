@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/node/alert/page": "app/node/alert/page.js",
+  "/node/condition/page": "app/node/condition/page.js",
+  "/node/value/page": "app/node/value/page.js",
+  "/node/validation/page": "app/node/validation/page.js",
+  "/node/required/page": "app/node/required/page.js",
+  "/node/visibility/page": "app/node/visibility/page.js",
+  "/page": "app/page.js"
+}
