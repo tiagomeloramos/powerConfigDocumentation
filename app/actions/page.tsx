@@ -93,7 +93,7 @@ export default function ActionsPage() {
             Notifications.
           </p>
           <div className="flex gap-4">
-            <Link href="/node/condition">
+            <Link href="/actions/node/condition">
               <Card className="bg-muted border-border hover:border-theme-primary transition-colors cursor-pointer">
                 <CardHeader className="py-3 px-4">
                   <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ export default function ActionsPage() {
                 </CardHeader>
               </Card>
             </Link>
-            <Link href="/node/visibility">
+            <Link href="/actions/node/visibility">
               <Card className="bg-muted border-border hover:border-theme-primary transition-colors cursor-pointer">
                 <CardHeader className="py-3 px-4">
                   <div className="flex items-center gap-2">
