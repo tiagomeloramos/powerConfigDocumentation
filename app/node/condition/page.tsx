@@ -9,12 +9,12 @@ export default function ConditionBuilderPage() {
     <DocumentationLayout>
       <div className="space-y-8">
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-sm text-emerald-400">
+          <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Node Types</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-emerald-500/10 rounded-lg">
-              <Split className="h-6 w-6 text-emerald-400" />
+            <div className="p-2 bg-theme-primary/10 rounded-lg">
+              <Split className="h-6 w-6 text-theme-primary" />
             </div>
             <h1 className="text-3xl font-bold text-white">Condition Node</h1>
           </div>
@@ -29,12 +29,13 @@ export default function ConditionBuilderPage() {
             <TabsTrigger value="how-it-works">How It Works</TabsTrigger>
             <TabsTrigger value="configuration">Configuration</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="overview" className="space-y-6 pt-4">
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Branching Logic</h2>
               <p className="text-gray-400">
-                The Condition Node evaluates expressions and directs the flow based on whether conditions are true or false.
+                The Condition Node evaluates expressions and directs the flow based on whether conditions are true or
+                false.
               </p>
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6 overflow-hidden">
@@ -68,7 +69,7 @@ export default function ConditionBuilderPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <CheckCircle2 className="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 text-theme-primary mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-white">True Path</h4>
                     <p className="text-gray-400">Executes when all conditions are met</p>
@@ -80,7 +81,9 @@ export default function ConditionBuilderPage() {
                   <div>
                     <h4 className="font-medium text-white">False Path</h4>
                     <p className="text-gray-400">Executes when conditions are not met</p>
-                    <p className="text-sm text-gray-500 mt-1">Example: When condition fails, notification will display</p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Example: When condition fails, notification will display
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -89,9 +92,7 @@ export default function ConditionBuilderPage() {
             <Card className="bg-gray-800/50 border-gray-700">
               <CardHeader>
                 <CardTitle className="text-white">Condition Types</CardTitle>
-                <CardDescription className="text-gray-400">
-                  Different ways to evaluate your data
-                </CardDescription>
+                <CardDescription className="text-gray-400">Different ways to evaluate your data</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="bg-gray-900 p-4 rounded-lg">
@@ -111,15 +112,13 @@ export default function ConditionBuilderPage() {
             <Card className="bg-gray-800/50 border-gray-700">
               <CardHeader>
                 <CardTitle className="text-white">Step-by-Step Setup</CardTitle>
-                <CardDescription className="text-gray-400">
-                  How to configure your condition groups
-                </CardDescription>
+                <CardDescription className="text-gray-400">How to configure your condition groups</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex gap-4 items-start">
-                    <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-emerald-400 font-medium">1</span>
+                    <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-theme-primary font-medium">1</span>
                     </div>
                     <div>
                       <h4 className="font-medium text-white">Click Add Condition</h4>
@@ -128,8 +127,8 @@ export default function ConditionBuilderPage() {
                   </div>
 
                   <div className="flex gap-4 items-start">
-                    <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-emerald-400 font-medium">2</span>
+                    <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-theme-primary font-medium">2</span>
                     </div>
                     <div>
                       <h4 className="font-medium text-white">Choose AND or OR logic</h4>
@@ -140,8 +139,8 @@ export default function ConditionBuilderPage() {
                   </div>
 
                   <div className="flex gap-4 items-start">
-                    <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-emerald-400 font-medium">3</span>
+                    <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-theme-primary font-medium">3</span>
                     </div>
                     <div>
                       <h4 className="font-medium text-white">Add conditions and groups</h4>
@@ -170,7 +169,7 @@ export default function ConditionBuilderPage() {
           <Card className="bg-gray-800/50 border-gray-700 flex-1 hover:border-gray-600 transition-colors">
             <CardHeader>
               <div className="flex items-center gap-2">
-                <Code className="h-5 w-5 text-emerald-400" />
+                <Code className="h-5 w-5 text-theme-primary" />
                 <CardTitle className="text-white">Interactive Demo</CardTitle>
               </div>
               <CardDescription className="text-gray-400">
@@ -182,7 +181,7 @@ export default function ConditionBuilderPage() {
           <Card className="bg-gray-800/50 border-gray-700 flex-1 hover:border-gray-600 transition-colors">
             <CardHeader>
               <div className="flex items-center gap-2">
-                <Play className="h-5 w-5 text-emerald-400" />
+                <Play className="h-5 w-5 text-theme-primary" />
                 <CardTitle className="text-white">Video Guide</CardTitle>
               </div>
               <CardDescription className="text-gray-400">

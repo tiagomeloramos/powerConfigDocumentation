@@ -10,7 +10,7 @@ export function TableOfContents() {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center gap-2 text-sm text-gray-400">
+      <div className="flex items-center gap-2 text-sm text-muted-foreground">
         <span>On this page</span>
       </div>
 
@@ -20,7 +20,7 @@ export function TableOfContents() {
             key={item.title}
             variant="ghost"
             size="sm"
-            className="w-full justify-start text-gray-400 hover:text-emerald-400 font-normal"
+            className="w-full justify-start text-muted-foreground hover:text-theme-primary font-normal"
             asChild
           >
             <a href={item.href}>{item.title}</a>

@@ -10,12 +10,12 @@ export default function ValuePage() {
     <DocumentationLayout>
       <div className="space-y-8">
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-sm text-emerald-400">
+          <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Node Types</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-emerald-500/10 rounded-lg">
-              <Zap className="h-6 w-6 text-emerald-400" />
+            <div className="p-2 bg-theme-primary/10 rounded-lg">
+              <Zap className="h-6 w-6 text-theme-primary" />
             </div>
             <h1 className="text-3xl font-bold text-white">Value Node</h1>
           </div>
@@ -29,12 +29,13 @@ export default function ValuePage() {
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="actions">Value Actions</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="overview" className="space-y-6 pt-4">
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Dynamic Value Control</h2>
               <p className="text-gray-400">
-                Value nodes let you programmatically set or clear field values, enabling automated form population and data management.
+                Value nodes let you programmatically set or clear field values, enabling automated form population and
+                data management.
               </p>
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
@@ -68,12 +69,12 @@ export default function ValuePage() {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <List className="h-5 w-5 text-emerald-400" />
+                    <List className="h-5 w-5 text-theme-primary" />
                     <div>
                       <h4 className="font-medium text-white">Action Types</h4>
                       <div className="flex gap-6 mt-2">
                         <div className="flex items-center gap-2">
-                          <Plus className="h-4 w-4 text-emerald-400" />
+                          <Plus className="h-4 w-4 text-theme-primary" />
                           <span className="text-gray-400">Set Value</span>
                         </div>
                         <div className="flex items-center gap-2">
@@ -99,8 +100,8 @@ export default function ValuePage() {
                   <h4 className="font-medium text-white">Adding a New Value Action</h4>
                   <div className="space-y-4">
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">1</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">1</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Click "Add Action"</h4>
@@ -109,8 +110,8 @@ export default function ValuePage() {
                     </div>
 
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">2</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">2</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Select Field</h4>
@@ -119,8 +120,8 @@ export default function ValuePage() {
                     </div>
 
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">3</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">3</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Choose Operation</h4>
@@ -129,8 +130,8 @@ export default function ValuePage() {
                     </div>
 
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">4</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">4</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Enter Value (if applied)</h4>

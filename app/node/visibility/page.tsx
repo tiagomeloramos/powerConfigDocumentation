@@ -1,7 +1,7 @@
 import { DocumentationLayout } from "@/components/documentation-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Eye, Code, Play, EyeOff, List } from "lucide-react"
+import { Eye, EyeOff, List } from "lucide-react"
 import Image from "next/image"
 
 export default function VisibilityPage() {
@@ -9,12 +9,12 @@ export default function VisibilityPage() {
     <DocumentationLayout>
       <div className="space-y-8">
         <div className="space-y-4">
-          <div className="flex items-center gap-2 text-sm text-emerald-400">
+          <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Node Types</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-emerald-500/10 rounded-lg">
-              <Eye className="h-6 w-6 text-emerald-400" />
+            <div className="p-2 bg-theme-primary/10 rounded-lg">
+              <Eye className="h-6 w-6 text-theme-primary" />
             </div>
             <h1 className="text-3xl font-bold text-white">Visibility Node</h1>
           </div>
@@ -28,12 +28,13 @@ export default function VisibilityPage() {
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="actions">Visibility Actions</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="overview" className="space-y-6 pt-4">
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Dynamic Field Visibility</h2>
               <p className="text-gray-400">
-                Visibility nodes allow you to show or hide fields/sections/tabs based on conditions, creating adaptive forms that respond to user input.
+                Visibility nodes allow you to show or hide fields/sections/tabs based on conditions, creating adaptive
+                forms that respond to user input.
               </p>
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
@@ -68,12 +69,12 @@ export default function VisibilityPage() {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <List className="h-5 w-5 text-emerald-400" />
+                    <List className="h-5 w-5 text-theme-primary" />
                     <div>
                       <h4 className="font-medium text-white">Action Types</h4>
                       <div className="flex gap-6 mt-2">
                         <div className="flex items-center gap-2">
-                          <Eye className="h-4 w-4 text-emerald-400" />
+                          <Eye className="h-4 w-4 text-theme-primary" />
                           <span className="text-gray-400">Show</span>
                         </div>
                         <div className="flex items-center gap-2">
@@ -99,8 +100,8 @@ export default function VisibilityPage() {
                   <h4 className="font-medium text-white">Adding a New Action</h4>
                   <div className="space-y-4">
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">1</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">1</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Click "Add Action"</h4>
@@ -109,8 +110,8 @@ export default function VisibilityPage() {
                     </div>
 
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">2</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">2</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Select Field / Tab / Section</h4>
@@ -119,8 +120,8 @@ export default function VisibilityPage() {
                     </div>
 
                     <div className="flex gap-4 items-start">
-                      <div className="bg-emerald-500/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-emerald-400 font-medium">3</span>
+                      <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-theme-primary font-medium">3</span>
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Choose Action</h4>

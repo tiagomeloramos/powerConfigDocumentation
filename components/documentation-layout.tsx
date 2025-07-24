@@ -15,14 +15,12 @@ export function DocumentationLayout({ children }: DocumentationLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-background">
       <div className="fixed top-0 left-0 right-0 z-50">
         <TopNavigation onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
       </div>
 
       <div className="flex pt-16">
-        {" "}
-        {/* Add padding-top to account for the fixed header */}
         <Sidebar isOpen={sidebarOpen} />
         <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? "ml-80" : "ml-0"}`}>
           <div className="flex">
