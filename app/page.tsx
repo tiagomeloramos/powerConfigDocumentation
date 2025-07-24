@@ -13,7 +13,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Get Started</span>
           </div>
-          <h1 className="text-4xl font-bold text-foreground">Welcome to Power UX</h1>
+          <h1 className="text-4xl font-bold text-foreground">Welcome to Power Config</h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
             With PowerUX, you can add complex logic to your Model-driven applications in just a few minutes without
             having to learn JavaScript!

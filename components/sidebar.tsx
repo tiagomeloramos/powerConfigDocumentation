@@ -12,13 +12,6 @@ interface SidebarProps {
   isOpen: boolean
 }
 
-interface NavItem {
-  title: string
-  icon: React.ReactNode
-  href?: string
-  children?: NavItem[]
-}
-
 export function Sidebar({ isOpen }: SidebarProps) {
   const pathname = usePathname()
   const [expandedSections, setExpandedSections] = useState<string[]>(["get-started"])
@@ -41,19 +34,6 @@ export function Sidebar({ isOpen }: SidebarProps) {
   const toggleSection = (section: string) => {
     setExpandedSections((prev) => (prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section]))
   }
-
-  const navItems: NavItem[] = [
-    {
-      title: "Documentation",
-      icon: <BookOpen className="h-4 w-4" />,
-      href: "/docs",
-    },
-    {
-      title: "Community",
-      icon: <Users className="h-4 w-4" />,
-      href: "/community",
-    },
-  ]
 
   const sections = [
     {
