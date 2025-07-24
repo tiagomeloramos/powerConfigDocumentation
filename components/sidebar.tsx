@@ -2,10 +2,10 @@
 
 import type React from "react"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { BookOpen, Users, Play, Zap, Terminal, ChevronDown, ChevronRight, Variable, Code } from "lucide-react"
+import {Play, Zap, Terminal, ChevronDown, ChevronRight, Variable, Code } from "lucide-react"
 import Link from "next/link"
 
 interface SidebarProps {
@@ -14,26 +14,6 @@ interface SidebarProps {
 
 export function Sidebar({ isOpen }: SidebarProps) {
   const pathname = usePathname()
-  const [expandedSections, setExpandedSections] = useState<string[]>(["get-started"])
-
-  useEffect(() => {
-    const sectionsToExpand = sections
-      .filter((section) => section.items.some((item) => pathname.includes(item.href)))
-      .map((section) => section.key)
-
-    if (sectionsToExpand.length > 0) {
-      setExpandedSections((prev) => [
-        // Keep currently expanded sections that aren't in our new list
-        ...prev.filter((key) => !sectionsToExpand.includes(key)),
-        // Add the new sections
-        ...sectionsToExpand,
-      ])
-    }
-  }, [pathname])
-
-  const toggleSection = (section: string) => {
-    setExpandedSections((prev) => (prev.includes(section) ? prev.filter((s) => s !== section) : [...prev, section]))
-  }
 
   const sections = [
     {
@@ -57,7 +37,9 @@ export function Sidebar({ isOpen }: SidebarProps) {
   // Check if section contains the current path
   const isSectionActive = (sectionKey: string) => {
     const section = sections.find((s) => s.key === sectionKey)
-    return section?.items.some((item) => pathname.includes(item.href))
+    return section?.items.some((item) => 
+      item.href === "/" ? pathname === "/" : pathname.includes(item.href)
+    )
   }
 
   if (!isOpen) return null
@@ -77,41 +59,34 @@ export function Sidebar({ isOpen }: SidebarProps) {
 
         {/* Main Navigation */}
         <nav className="space-y-6">
-          {/* Sections */}
+          {/* Sections - Always expanded */}
           {sections.map((section) => (
             <div key={section.key} className="space-y-1">
               <Button
                 variant="ghost"
-                onClick={() => toggleSection(section.key)}
                 className={`w-full justify-between ${isSectionActive(section.key) ? "text-theme-primary" : "text-muted-foreground hover:text-foreground"} font-medium`}
               >
                 <span>{section.title}</span>
-                {expandedSections.includes(section.key) ? (
-                  <ChevronDown className="h-4 w-4" />
-                ) : (
-                  <ChevronRight className="h-4 w-4" />
-                )}
               </Button>
 
-              {expandedSections.includes(section.key) && (
-                <div className="ml-4 space-y-1">
-                  {section.items.map((item) => (
-                    <Link key={item.title} href={item.href || "#"}>
-                      <Button
-                        variant="ghost"
-                        className={`w-full justify-start text-sm ${
-                          pathname.includes(item.href)
-                            ? "text-theme-primary bg-theme-primary/10"
-                            : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                        }`}
-                      >
-                        {item.icon}
-                        <span className="ml-2">{item.title}</span>
-                      </Button>
-                    </Link>
-                  ))}
-                </div>
-              )}
+              {/* Always show items */}
+              <div className="ml-4 space-y-1">
+                {section.items.map((item) => (
+                  <Link key={item.title} href={item.href || "#"}>
+                    <Button
+                      variant="ghost"
+                      className={`w-full justify-start text-sm ${
+                        item.href === "/" ? pathname === "/" : pathname.includes(item.href)
+                          ? "text-theme-primary bg-theme-primary/10"
+                          : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                      }`}
+                    >
+                      {item.icon}
+                      <span className="ml-2">{item.title}</span>
+                    </Button>
+                  </Link>
+                ))}
+              </div>
             </div>
           ))}
         </nav>
