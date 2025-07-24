@@ -11,11 +11,11 @@ export default function ValuePage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Node Types</span>
+            <span>Actions</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
-              <Zap className="h-6 w-6 text-theme-primary" />
+              <Zap className="h-6 w-6 text-purple-400" />
             </div>
             <h1 className="text-3xl font-bold text-white">Value Node</h1>
           </div>

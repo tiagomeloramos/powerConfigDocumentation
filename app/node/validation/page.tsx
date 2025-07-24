@@ -11,11 +11,11 @@ export default function ValidationPage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Node Types</span>
+            <span>Actions</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
-              <Regex className="h-6 w-6 text-theme-primary" />
+              <Regex className="h-6 w-6 text-green-400" />
             </div>
             <h1 className="text-3xl font-bold text-white">Validation Node</h1>
           </div>

@@ -24,10 +24,10 @@ export function DocumentationLayout({ children }: DocumentationLayoutProps) {
         <Sidebar isOpen={sidebarOpen} />
         <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? "ml-80" : "ml-0"}`}>
           <div className="flex">
-            <div className="flex-1 p-8 max-w-6xl">{children}</div>
+            <div className="flex-1 p-8 max-w-7xl">{children}</div>
 
             <div className="hidden xl:block w-64 p-8">
-              <TableOfContents />
+              {/*<TableOfContents />*/}
             </div>
           </div>
         </main>
