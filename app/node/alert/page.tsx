@@ -78,7 +78,7 @@ export default function AlertPage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                     <Image
-                      src="./images/alert/alert-actions-list.png"
+                      src="/powerConfigDocumentation/images/alert/alert-actions-list.png"
                       alt="Alert Actions List"
                       width={400}
                       height={200}
@@ -124,7 +124,7 @@ export default function AlertPage() {
                   <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                       <Image
-                        src="./images/alert/alert-notification.png"
+                        src="/powerConfigDocumentation/images/alert/alert-notification.png"
                         alt="Alert Notification"
                         width={600}
                         height={300}
@@ -133,7 +133,7 @@ export default function AlertPage() {
                     </div>
                     <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                       <Image
-                        src="./images/alert/alert-confirmation.png"
+                        src="/powerConfigDocumentation/images/alert/alert-confirmation.png"
                         alt="Alert Confirmation"
                         width={600}
                         height={300}

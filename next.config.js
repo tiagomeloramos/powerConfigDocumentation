@@ -4,13 +4,6 @@ const nextConfig = {
   //distDir: 'out', // Export files to "out" folder
   images: { 
     unoptimized: true,
-    remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'tiagomeloramos.github.io',
-          pathname: '/powerConfigDocumentation/**',
-        },
-      ],
   },
   reactStrictMode: true,
   basePath: '/powerConfigDocumentation',

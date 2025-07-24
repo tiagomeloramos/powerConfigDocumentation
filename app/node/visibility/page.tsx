@@ -39,7 +39,7 @@ export default function VisibilityPage() {
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
                 <Image
-                  src="./images/visibility/visibility-actions-overview.png"
+                  src="/powerConfigDocumentation/images/visibility/visibility-actions-overview.png"
                   alt="Visibility Actions Interface"
                   width={800}
                   height={450}
@@ -87,7 +87,7 @@ export default function VisibilityPage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                     <Image
-                      src="./images/visibility/visibility-actions-list.png" // Replace with your actual image path
+                      src="/powerConfigDocumentation/images/visibility/visibility-actions-list.png" // Replace with your actual image path
                       alt="Visibility Actions List"
                       width={600}
                       height={300}
@@ -132,7 +132,7 @@ export default function VisibilityPage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 mt-4">
                     <Image
-                      src="./images/visibility/add-visibility-action.png" // Replace with your actual image path
+                      src="/powerConfigDocumentation/images/visibility/add-visibility-action.png" // Replace with your actual image path
                       alt="Add Visibility Action"
                       width={600}
                       height={400}

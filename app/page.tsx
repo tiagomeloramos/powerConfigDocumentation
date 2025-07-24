@@ -22,7 +22,7 @@ export default function HomePage() {
         {/* Workflow Diagram */}
         <div className="bg-card rounded-lg p-6 border border-border">
           <Image
-            src="./images/power-config.png"
+            src="/powerConfigDocumentation/images/power-config.png"
             alt="Power Config Workflow Diagram"
             width={800}
             height={400}
