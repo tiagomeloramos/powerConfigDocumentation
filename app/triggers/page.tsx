@@ -42,8 +42,8 @@ export default function TriggersPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">How Triggers Work</h2>
               <p className="text-muted-foreground">
-                Triggers act as the starting point for your Power Config flows. When a specific event occurs in your form or
-                application, the associated trigger fires and executes the connected actions and logic. Each trigger
+                Triggers act as the starting point for your Power Config flows. When a specific event occurs in your form,
+                the associated trigger fires and executes the connected actions and logic. Each trigger
                 type responds to different user interactions or system events.
               </p>
 
@@ -110,15 +110,13 @@ export default function TriggersPage() {
                     This trigger fires immediately when a user opens or navigates to your form. It's perfect for:
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                    <li>Setting default field values based on user context</li>
-                    <li>Hiding or showing sections based on user permissions</li>
-                    <li>Pre-populating fields with data from other sources</li>
-                    <li>Initializing form state and configurations</li>
+                    <li>Setting default field values</li>
+                    <li>Hiding or showing sections</li>
                   </ul>
                   <div className="bg-muted p-3 rounded-lg mt-4">
                     <p className="text-sm text-muted-foreground">
                       <strong>Example:</strong> When a customer opens a support ticket form, automatically populate
-                      their contact information and show relevant service options based on their subscription level.
+                      subscription level field.
                     </p>
                   </div>
                 </CardContent>
