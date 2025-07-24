@@ -80,9 +80,8 @@ export function Sidebar({ isOpen }: SidebarProps) {
       title: "Get Started",
       key: "get-started",
       items: [
-        { title: "Welcome to Power Config", icon: <BookOpen className="h-4 w-4" />, href: "/" },
-        { title: "Quickstart", icon: <Play className="h-4 w-4" />, href: "/quickstart" },
-        { title: "Your First Flow", icon: <Zap className="h-4 w-4" />, href: "/first-flow" },
+        { title: "Install", icon: <Play className="h-4 w-4" />, href: "/" },
+        { title: "Creating a Flow", icon: <Zap className="h-4 w-4" />, href: "/first-flow" },
       ],
     },
     {
@@ -102,10 +101,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
       key: "essentials",
       items: [
         { title: "Triggers", icon: <Zap className="h-4 w-4" />, href: "/triggers" },
-        { title: "Command Bar", icon: <Terminal className="h-4 w-4" />, href: "/command-bar" },
-        { title: "Settings", icon: <Settings className="h-4 w-4" />, href: "/settings" },
-        { title: "Steps", icon: <Layers className="h-4 w-4" />, href: "/steps" },
-        { title: "Projects", icon: <FolderOpen className="h-4 w-4" />, href: "/projects" },
+        { title: "Actions", icon: <Terminal className="h-4 w-4" />, href: "/command-bar" },
       ],
     },
   ]
@@ -122,18 +118,18 @@ export function Sidebar({ isOpen }: SidebarProps) {
     <aside className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-80 bg-gray-800 border-r border-gray-700 overflow-y-auto">
       <div className="p-6">
         {/* Top Navigation Tabs */}
-        <div className="flex mb-6 border-b border-gray-700">
-          <Button variant="ghost" className="text-emerald-400 border-b-2 border-emerald-400 rounded-none px-4 py-2">
+        <div className="flex mb-12 border-b border-gray-700 justify-start">
+          <Button variant="ghost" className="text-emerald-400 border-b-2 border-emerald-400 rounded-none px-4 py-1 text-left w-full">
             Documentation
           </Button>
-          <Button variant="ghost" className="text-gray-400 hover:text-white rounded-none px-4 py-2">
+          {/*<Button variant="ghost" className="text-gray-400 hover:text-white rounded-none px-4 py-2">
             Controls
-          </Button>
+          </Button>*/}
         </div>
 
         {/* Main Navigation */}
         <nav className="space-y-6">
-          {/* Top Level Items */}
+          {/* Top Level Items 
           <div className="space-y-1">
             {navItems.map((item) => (
               <Link key={item.title} href={item.href || "#"}>
@@ -146,7 +142,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
                 </Button>
               </Link>
             ))}
-          </div>
+          </div>*/}
 
           {/* Sections */}
           {sections.map((section) => (

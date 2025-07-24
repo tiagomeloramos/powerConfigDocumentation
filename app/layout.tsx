@@ -6,8 +6,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Power UX Documentation",
-  description: "Documentation for Power UX - Add complex logic to your Model-driven applications",
+  title: "Power Config Documentation",
+  description: "Documentation for Power Config - Add complex logic to your Power Pages Forms",
     generator: 'v0.dev'
 }
 

@@ -29,7 +29,7 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="relative max-w-md">
+          {/*<div className="relative max-w-md">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
             <Input
               placeholder="Search..."
@@ -38,7 +38,7 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
             <kbd className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xs text-gray-400 bg-gray-600 px-2 py-1 rounded">
               Ctrl K
             </kbd>
-          </div>
+          </div>*/}
 
           <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
             Support
