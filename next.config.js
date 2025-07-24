@@ -5,7 +5,7 @@ const nextConfig = {
   images: { unoptimized: true },
   reactStrictMode: true,
   basePath: '/powerConfigDocumentation',
-  //assetPrefix: '/powerConfigDocumentation/',
+  assetPrefix: '/powerConfigDocumentation/',
 };
 
 module.exports = nextConfig;
