@@ -18,7 +18,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
 
   useEffect(() => {
     const sectionsToExpand = sections
-      .filter((section) => section.items.some((item) => pathname === item.href))
+      .filter((section) => section.items.some((item) => pathname.includes(item.href)))
       .map((section) => section.key)
 
     if (sectionsToExpand.length > 0) {
@@ -57,7 +57,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
   // Check if section contains the current path
   const isSectionActive = (sectionKey: string) => {
     const section = sections.find((s) => s.key === sectionKey)
-    return section?.items.some((item) => pathname === item.href)
+    return section?.items.some((item) => pathname.includes(item.href))
   }
 
   if (!isOpen) return null
@@ -100,7 +100,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
                       <Button
                         variant="ghost"
                         className={`w-full justify-start text-sm ${
-                          pathname === item.href
+                          pathname.includes(item.href)
                             ? "text-theme-primary bg-theme-primary/10"
                             : "text-muted-foreground hover:text-foreground hover:bg-accent"
                         }`}
