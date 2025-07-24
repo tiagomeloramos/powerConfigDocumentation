@@ -2,8 +2,9 @@
 const nextConfig = {
   output: 'export',
   //distDir: 'out', // Export files to "out" folder
-  //images: { unoptimized: true },
-  //basePath: '/powerConfigDocumentation',
+  images: { unoptimized: true },
+  reactStrictMode: true,
+  basePath: '/powerConfigDocumentation',
   //assetPrefix: '/powerConfigDocumentation/',
 };
 
