@@ -40,7 +40,7 @@ export default function ConditionBuilderPage() {
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6 overflow-hidden">
                 <Image
-                  src="/images/condition/condition-builder-interface.png"
+                  src="./images/condition/condition-builder-interface.png"
                   alt="Condition Builder Interface"
                   width={800}
                   height={450}
@@ -97,7 +97,7 @@ export default function ConditionBuilderPage() {
               <CardContent>
                 <div className="bg-gray-900 p-4 rounded-lg">
                   <Image
-                    src="/images/condition/condition-types-example.png"
+                    src="./images/condition/condition-types-example.png"
                     alt="Condition Types Example"
                     width={600}
                     height={300}
@@ -153,7 +153,7 @@ export default function ConditionBuilderPage() {
 
                 <div className="mt-6 border-t border-gray-700 pt-6">
                   <Image
-                    src="/images/condition/condition-group-example.png"
+                    src="./images/condition/condition-group-example.png"
                     alt="Condition Group Example"
                     width={600}
                     height={400}

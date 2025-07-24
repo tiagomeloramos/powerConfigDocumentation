@@ -40,7 +40,7 @@ export default function ValuePage() {
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
                 <Image
-                  src="/images/value/value-actions-overview.png"
+                  src="./images/value/value-actions-overview.png"
                   alt="Value Actions Interface"
                   width={800}
                   height={450}
@@ -87,7 +87,7 @@ export default function ValuePage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                     <Image
-                      src="/images/value/value-actions-list.png"
+                      src="./images/value/value-actions-list.png"
                       alt="Value Actions List"
                       width={600}
                       height={300}
@@ -142,7 +142,7 @@ export default function ValuePage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 mt-4">
                     <Image
-                      src="/images/value/add-value-action.png"
+                      src="./images/value/add-value-action.png"
                       alt="Add Value Action"
                       width={600}
                       height={400}

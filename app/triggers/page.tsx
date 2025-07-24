@@ -23,7 +23,7 @@ export default function TriggersPage() {
         {/* Trigger Interface */}
         <div className="bg-card rounded-lg p-6 border border-border">
           <Image
-            src="/images/triggers/trigger-interface.png"
+            src="./images/triggers/trigger-interface.png"
             alt="Trigger Configuration Interface"
             width={400}
             height={300}

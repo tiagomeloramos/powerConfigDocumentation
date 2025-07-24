@@ -38,7 +38,7 @@ export default function RequiredPage() {
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
                 <Image
-                  src="/images/required/required-fields-overview.png" // Replace with your actual image path
+                  src="./images/required/required-fields-overview.png" // Replace with your actual image path
                   alt="Required Fields Interface"
                   width={800}
                   height={450}
@@ -84,7 +84,7 @@ export default function RequiredPage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                     <Image
-                      src="/images/required/required-fields-list.png" // Replace with your actual image path
+                      src="./images/required/required-fields-list.png" // Replace with your actual image path
                       alt="Required Fields List"
                       width={600}
                       height={300}
@@ -129,7 +129,7 @@ export default function RequiredPage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 mt-4">
                     <Image
-                      src="/images/required/add-validation-rule.png" // Replace with your actual image path
+                      src="./images/required/add-validation-rule.png" // Replace with your actual image path
                       alt="Add Validation Rule"
                       width={600}
                       height={400}
