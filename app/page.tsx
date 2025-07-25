@@ -80,7 +80,7 @@ export default function HomePage() {
               </Card>
             </Link>
 
-            <Link href="/actions">
+            <Link href="/steps">
               <Card className="bg-card border-border hover:border-theme-primary/50 transition-colors group cursor-pointer">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between">
@@ -89,7 +89,7 @@ export default function HomePage() {
                     </div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-theme-primary transition-colors" />
                   </div>
-                  <CardTitle className="text-foreground">Actions</CardTitle>
+                  <CardTitle className="text-foreground">Steps</CardTitle>
                   <CardDescription className="text-muted-foreground">
                     Get started by installing Power Config in your environment
                   </CardDescription>

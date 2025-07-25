@@ -1,7 +1,8 @@
 import { DocumentationLayout } from "@/components/documentation-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Eye, EyeOff, List } from "lucide-react"
+import { List } from "@radix-ui/react-tabs"
+import { Eye, EyeOff } from "lucide-react"
 import Image from "next/image"
 
 export default function VisibilityPage() {
@@ -10,13 +11,13 @@ export default function VisibilityPage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Actions</span>
+            <span>Steps</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
               <Eye className="h-6 w-6 text-blue-400" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Visibility Node</h1>
+            <h1 className="text-3xl font-bold text-white">Step Visibility</h1>
           </div>
           <p className="text-lg text-gray-400 max-w-3xl">
             Control what are visible in your forms with dynamic visibility rules.
@@ -33,7 +34,7 @@ export default function VisibilityPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Dynamic Field Visibility</h2>
               <p className="text-gray-400">
-                Visibility nodes allow you to show or hide fields/sections/tabs based on conditions, creating adaptive
+                Step Visibility allow you to show or hide fields/sections/tabs based on conditions, creating adaptive
                 forms that respond to user input.
               </p>
 

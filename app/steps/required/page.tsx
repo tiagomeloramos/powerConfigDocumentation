@@ -11,13 +11,13 @@ export default function RequiredPage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Actions</span>
+            <span>Steps</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
               <CheckCircle2 className="h-6 w-6 text-orange-400" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Required Node</h1>
+            <h1 className="text-3xl font-bold text-white">Step Required</h1>
           </div>
           <p className="text-lg text-gray-400 max-w-3xl">Control which fields are required in your forms.</p>
         </div>
@@ -32,7 +32,7 @@ export default function RequiredPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Dynamic Required Fields</h2>
               <p className="text-gray-400">
-                Required nodes let you specify which fields must be filled out before form submission, creating more
+                Step Required let you specify which fields must be filled out before form submission, creating more
                 robust data collection.
               </p>
 

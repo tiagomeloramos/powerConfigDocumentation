@@ -2,46 +2,45 @@ import { DocumentationLayout } from "@/components/documentation-layout"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { List } from "@radix-ui/react-tabs"
-import { Zap, Plus, Minus } from "lucide-react"
+import { Regex, ShieldAlert, ShieldCheck } from "lucide-react"
 import Image from "next/image"
 
-export default function ValuePage() {
+export default function ValidationPage() {
   return (
     <DocumentationLayout>
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Actions</span>
+            <span>Steps</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
-              <Zap className="h-6 w-6 text-purple-400" />
+              <Regex className="h-6 w-6 text-green-400" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Value Node</h1>
+            <h1 className="text-3xl font-bold text-white">Step Validation</h1>
           </div>
           <p className="text-lg text-gray-400 max-w-3xl">
-            Set or clear field values dynamically in your application forms and flows.
+            Apply validation rules to ensure field data meets your requirements.
           </p>
         </div>
 
         <Tabs defaultValue="overview" className="w-full">
           <TabsList className="bg-gray-800 border-gray-700">
             <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="actions">Value Actions</TabsTrigger>
+            <TabsTrigger value="rules">Validation Rules</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-6 pt-4">
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold text-white">Dynamic Value Control</h2>
+              <h2 className="text-2xl font-semibold text-white">Data Validation</h2>
               <p className="text-gray-400">
-                Value nodes let you programmatically set or clear field values, enabling automated form population and
-                data management.
+                Step Validation let you define rules that ensure user input meets specific criteria before submission.
               </p>
 
               <div className="bg-gray-800/50 rounded-lg border border-gray-700 mt-6">
                 <Image
-                  src="/powerConfigDocumentation/images/value/value-actions-overview.png"
-                  alt="Value Actions Interface"
+                  src="/powerConfigDocumentation/images/validation/validation-rules-overview.png"
+                  alt="Validation Rules Interface"
                   width={800}
                   height={450}
                   className="w-full"
@@ -50,20 +49,20 @@ export default function ValuePage() {
 
               <h3 className="text-xl font-semibold text-white mt-8">Key Features</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-400">
-                <li>Set specific values in form fields</li>
-                <li>Clear existing field values</li>
-                <li>Group value actions for complex scenarios</li>
-                <li>Works with all field types</li>
+                <li>Built-in validation types (email, url, etc.)</li>
+                <li>Custom regex pattern validation</li>
+                <li>Custom error messages for each rule</li>
+                <li>Combine multiple validation rules</li>
               </ul>
             </div>
           </TabsContent>
 
-          <TabsContent value="actions" className="space-y-6 pt-4">
+          <TabsContent value="rules" className="space-y-6 pt-4">
             <Card className="bg-gray-800/50 border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Value Actions</CardTitle>
+                <CardTitle className="text-white">Validation Rules</CardTitle>
                 <CardDescription className="text-gray-400">
-                  Manage how values are set or cleared in your forms
+                  Manage the validation rules applied to your form fields
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -71,15 +70,15 @@ export default function ValuePage() {
                   <div className="flex items-center gap-4">
                     <List className="h-5 w-5 text-theme-primary" />
                     <div>
-                      <h4 className="font-medium text-white">Action Types</h4>
+                      <h4 className="font-medium text-white">Rule Types</h4>
                       <div className="flex gap-6 mt-2">
                         <div className="flex items-center gap-2">
-                          <Plus className="h-4 w-4 text-theme-primary" />
-                          <span className="text-gray-400">Set Value</span>
+                          <ShieldCheck className="h-4 w-4 text-theme-primary" />
+                          <span className="text-gray-400">Built-in</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Minus className="h-4 w-4 text-amber-400" />
-                          <span className="text-gray-400">Clear Value</span>
+                          <ShieldAlert className="h-4 w-4 text-blue-400" />
+                          <span className="text-gray-400">Custom</span>
                         </div>
                       </div>
                     </div>
@@ -87,8 +86,8 @@ export default function ValuePage() {
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
                     <Image
-                      src="/powerConfigDocumentation/images/value/value-actions-list.png"
-                      alt="Value Actions List"
+                      src="/powerConfigDocumentation/images/validation/validation-rules-list.png"
+                      alt="Validation Rules List"
                       width={600}
                       height={300}
                       className="w-full"
@@ -97,15 +96,15 @@ export default function ValuePage() {
                 </div>
 
                 <div className="space-y-4 pt-4">
-                  <h4 className="font-medium text-white">Adding a New Value Action</h4>
+                  <h4 className="font-medium text-white">Adding a New Validation Rule</h4>
                   <div className="space-y-4">
                     <div className="flex gap-4 items-start">
                       <div className="bg-theme-primary/10 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-theme-primary font-medium">1</span>
                       </div>
                       <div>
-                        <h4 className="font-medium text-white">Click "Add Action"</h4>
-                        <p className="text-gray-400 mt-1">Open the value action configuration</p>
+                        <h4 className="font-medium text-white">Click "Add Rule"</h4>
+                        <p className="text-gray-400 mt-1">Open the validation rule configuration</p>
                       </div>
                     </div>
 
@@ -115,7 +114,7 @@ export default function ValuePage() {
                       </div>
                       <div>
                         <h4 className="font-medium text-white">Select Field</h4>
-                        <p className="text-gray-400 mt-1">Choose which field to modify</p>
+                        <p className="text-gray-400 mt-1">Choose which field to validate</p>
                       </div>
                     </div>
 
@@ -124,8 +123,8 @@ export default function ValuePage() {
                         <span className="text-theme-primary font-medium">3</span>
                       </div>
                       <div>
-                        <h4 className="font-medium text-white">Choose Operation</h4>
-                        <p className="text-gray-400 mt-1">Select whether to set or clear the value</p>
+                        <h4 className="font-medium text-white">Choose Validation Type</h4>
+                        <p className="text-gray-400 mt-1">Select built-in or custom validation</p>
                       </div>
                     </div>
 
@@ -134,16 +133,16 @@ export default function ValuePage() {
                         <span className="text-theme-primary font-medium">4</span>
                       </div>
                       <div>
-                        <h4 className="font-medium text-white">Enter Value (if applied)</h4>
-                        <p className="text-gray-400 mt-1">Specify the value to set in the field</p>
+                        <h4 className="font-medium text-white">Configure Rule</h4>
+                        <p className="text-gray-400 mt-1">Set pattern and error message</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-gray-900 p-4 rounded-lg border border-gray-700 mt-4">
                     <Image
-                      src="/powerConfigDocumentation/images/value/add-value-action.png"
-                      alt="Add Value Action"
+                      src="/powerConfigDocumentation/images/validation/add-validation-rule.png"
+                      alt="Add Validation Rule"
                       width={600}
                       height={400}
                       className="w-full"

@@ -11,13 +11,13 @@ export default function AlertPage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Actions</span>
+            <span>Steps</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
               <AlertCircle className="h-6 w-6 text-red-400" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Alert Node</h1>
+            <h1 className="text-3xl font-bold text-white">Step Alert</h1>
           </div>
           <p className="text-lg text-gray-400 max-w-3xl">
             Configure notifications and confirmations to communicate important information to users.
@@ -34,7 +34,7 @@ export default function AlertPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">User Notifications</h2>
               <p className="text-gray-400">
-                Alert nodes let you display important messages and confirmation dialogs to users at key moments in your
+                Step Alert let you display important messages and confirmation dialogs to users at key moments in your
                 application flow.
               </p>
 

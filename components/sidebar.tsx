@@ -29,7 +29,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
       key: "essentials",
       items: [
         { title: "Triggers", icon: <Zap className="h-4 w-4" />, href: "/triggers" },
-        { title: "Actions", icon: <Terminal className="h-4 w-4" />, href: "/actions" },
+        { title: "Steps", icon: <Terminal className="h-4 w-4" />, href: "/steps" },
       ],
     },
   ]

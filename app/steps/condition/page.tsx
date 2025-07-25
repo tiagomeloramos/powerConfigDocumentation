@@ -10,13 +10,13 @@ export default function ConditionBuilderPage() {
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-sm text-theme-primary">
-            <span>Actions</span>
+            <span>Steps</span>
           </div>
           <div className="flex items-center gap-3">
             <div className="p-2 bg-theme-primary/10 rounded-lg">
               <Split className="h-6 w-6 text-yellow-400" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Condition Node</h1>
+            <h1 className="text-3xl font-bold text-white">Step Condition</h1>
           </div>
           <p className="text-lg text-gray-400 max-w-3xl">
             Create branching logic in your flows with powerful condition rules and groups.
@@ -34,7 +34,7 @@ export default function ConditionBuilderPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-white">Branching Logic</h2>
               <p className="text-gray-400">
-                The Condition Node evaluates expressions and directs the flow based on whether conditions are true or
+                The Step Condition evaluates expressions and directs the flow based on whether conditions are true or
                 false.
               </p>
 

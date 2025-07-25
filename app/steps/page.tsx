@@ -6,46 +6,46 @@ import Link from "next/link"
 export default function ActionsPage() {
   const nodeTypes = [
     {
-      title: "Condition",
+      title: "Step Condition",
       description: "Create branching logic with powerful condition rules and groups to control your application flow",
       icon: <Split className="h-6 w-6 text-yellow-400" />,
       color: "text-yellow-400",
-      href: "/actions/node/condition",
+      href: "/steps/condition",
     },
     {
-      title: "Visibility",
+      title: "Step Visibility",
       description: "Control what elements are visible in your forms dynamically based on user input and conditions",
       icon: <Eye className="h-6 w-6 text-blue-400" />,
       color: "text-blue-400",
-      href: "/actions/node/visibility",
+      href: "/steps/visibility",
     },
     {
-      title: "Required Fields",
+      title: "Step Required Fields",
       description: "Define which fields should be required or optional in your forms to ensure proper data collection",
       icon: <CheckCircle2 className="h-6 w-6 text-orange-400" />,
       color: "text-orange-400",
-      href: "/actions/node/required",
+      href: "/steps/required",
     },
     {
-      title: "Value Actions",
+      title: "Step Value Actions",
       description: "Set or clear field values dynamically to automate form population and data management processes",
       icon: <Zap className="h-6 w-6 text-purple-400" />,
       color: "text-purple-400",
-      href: "/actions/node/value",
+      href: "/steps/value",
     },
     {
-      title: "Validation Rules",
+      title: "Step Validation Rules",
       description: "Apply validation rules to ensure field data meets your requirements before form submission",
       icon: <Regex className="h-6 w-6 text-green-400" />,
       color: "text-green-400",
-      href: "/actions/node/validation",
+      href: "/steps/validation",
     },
     {
-      title: "Alert Notifications",
+      title: "Step Alert Notifications",
       description: "Configure notifications and confirmations to communicate important information to your users",
       icon: <CircleAlert className="h-6 w-6 text-red-400" />,
       color: "text-red-400",
-      href: "/actions/node/alert",
+      href: "/steps/alert",
     },
   ]
 
@@ -57,7 +57,7 @@ export default function ActionsPage() {
           <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Essentials</span>
           </div>
-          <h1 className="text-4xl font-bold text-foreground">Actions</h1>
+          <h1 className="text-4xl font-bold text-foreground">Steps</h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
             Explore all the available action types and nodes to build powerful, dynamic forms and workflows in your
             Power Platform applications.
@@ -93,22 +93,22 @@ export default function ActionsPage() {
             Notifications.
           </p>
           <div className="flex gap-4">
-            <Link href="/actions/node/condition">
+            <Link href="/steps/condition">
               <Card className="bg-muted border-border hover:border-theme-primary transition-colors cursor-pointer">
                 <CardHeader className="py-3 px-4">
                   <div className="flex items-center gap-2">
                     <Split className="h-4 w-4 text-theme-primary" />
-                    <span className="text-foreground font-medium">Start with Conditions</span>
+                    <span className="text-foreground font-medium">Start with Step Conditions</span>
                   </div>
                 </CardHeader>
               </Card>
             </Link>
-            <Link href="/actions/node/visibility">
+            <Link href="/steps/visibility">
               <Card className="bg-muted border-border hover:border-theme-primary transition-colors cursor-pointer">
                 <CardHeader className="py-3 px-4">
                   <div className="flex items-center gap-2">
                     <Eye className="h-4 w-4 text-theme-primary" />
-                    <span className="text-foreground font-medium">Learn Visibility</span>
+                    <span className="text-foreground font-medium">Learn Step Visibility</span>
                   </div>
                 </CardHeader>
               </Card>
