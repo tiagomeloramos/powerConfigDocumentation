@@ -55,11 +55,11 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Node Types Section */}
+        {/* Steps Types Section */}
         <div className="space-y-6">
           <h2 className="text-2xl font-bold text-foreground">Essentials</h2>
           <p className="text-muted-foreground">
-            Explore the different types of nodes available to build your flows and control form behavior.
+            Explore the different types of steps available to build your flows and control form behavior.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">

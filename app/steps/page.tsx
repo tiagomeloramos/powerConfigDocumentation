@@ -4,7 +4,7 @@ import { Split, Eye, CheckCircle2, Zap, Regex, CircleAlert, ArrowRight, Settings
 import Link from "next/link"
 
 export default function ActionsPage() {
-  const nodeTypes = [
+  const steps = [
     {
       title: "Step Condition",
       description: "Create branching logic with powerful condition rules and groups to control your application flow",
@@ -59,24 +59,24 @@ export default function ActionsPage() {
           </div>
           <h1 className="text-4xl font-bold text-foreground">Steps</h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Explore all the available action types and nodes to build powerful, dynamic forms and workflows in your
+            Explore all the available steps to build powerful, dynamic forms and workflows in your
             Power Platform applications.
           </p>
         </div>
 
-        {/* Node Types Grid */}
+        {/* Steps Grid */}
         <div className="grid md:grid-cols-2 gap-6">
-          {nodeTypes.map((nodeType, index) => (
-            <Link key={index} href={nodeType.href}>
+          {steps.map((step, index) => (
+            <Link key={index} href={step.href}>
               <Card className="bg-card border-border hover:border-theme-primary/50 transition-all duration-200 group cursor-pointer h-full">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between">
-                    <div className="p-2 bg-theme-primary/10 rounded-lg w-fit">{nodeType.icon}</div>
+                    <div className="p-2 bg-theme-primary/10 rounded-lg w-fit">{step.icon}</div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-theme-primary transition-colors mt-2" />
                   </div>
-                  <CardTitle className="text-foreground text-xl">{nodeType.title}</CardTitle>
+                  <CardTitle className="text-foreground text-xl">{step.title}</CardTitle>
                   <CardDescription className="text-muted-foreground leading-relaxed">
-                    {nodeType.description}
+                    {step.description}
                   </CardDescription>
                 </CardHeader>
               </Card>
