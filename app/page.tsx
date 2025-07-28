@@ -13,9 +13,9 @@ export default function HomePage() {
           <div className="flex items-center gap-2 text-sm text-theme-primary">
             <span>Get Started</span>
           </div>
-          <h1 className="text-4xl font-bold text-foreground">Welcome to Power Config</h1>
+          <h1 className="text-4xl font-bold text-foreground">Welcome to Rules for Power Pages</h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            With Power Config, you can enhance your Dynamics 365 portals with dynamic, user-friendly experiences—no JavaScript required!
+            With Rules for Power Pages, you can enhance your Dynamics 365 portals with dynamic, user-friendly experiences—no JavaScript required!
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="bg-card rounded-lg p-6 border border-border">
           <Image
             src="/powerConfigDocumentation/images/power-config.png"
-            alt="Power Config Workflow Diagram"
+            alt="Rules for Power Pages Workflow Diagram"
             width={800}
             height={400}
             className="w-full h-auto rounded-lg"
@@ -48,7 +48,7 @@ export default function HomePage() {
                 </div>
                 <CardTitle className="text-foreground">Installation</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  Get started by installing Power Config in your environment
+                  Get started by installing Rules for Power Pages in your environment
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -74,7 +74,7 @@ export default function HomePage() {
                   </div>
                   <CardTitle className="text-foreground">Triggers</CardTitle>
                   <CardDescription className="text-muted-foreground">
-                    Get started by installing Power Config in your environment
+                    Get started by installing Rules for Power Pages in your environment
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -91,7 +91,7 @@ export default function HomePage() {
                   </div>
                   <CardTitle className="text-foreground">Steps</CardTitle>
                   <CardDescription className="text-muted-foreground">
-                    Get started by installing Power Config in your environment
+                    Get started by installing Rules for Power Pages in your environment
                   </CardDescription>
                 </CardHeader>
               </Card>

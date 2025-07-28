@@ -42,7 +42,7 @@ export default function TriggersPage() {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-foreground">How Triggers Work</h2>
               <p className="text-muted-foreground">
-                Triggers act as the starting point for your Power Config flows. When a specific event occurs in your form,
+                Triggers act as the starting point for your Rules for Power Pages flows. When a specific event occurs in your form,
                 the associated trigger fires and executes the connected actions and logic. Each trigger
                 type responds to different user interactions or system events.
               </p>
@@ -210,7 +210,7 @@ export default function TriggersPage() {
                     <div>
                       <h4 className="font-medium text-foreground">Create a New Flow</h4>
                       <p className="text-muted-foreground mt-1">
-                        Start by creating a new flow in your Power Config configuration
+                        Start by creating a new flow in your Rules for Power Pages configuration
                       </p>
                     </div>
                   </div>

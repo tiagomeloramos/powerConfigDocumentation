@@ -30,9 +30,9 @@ export function TopNavigation({ onMenuClick }: TopNavigationProps) {
 
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-theme-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">P</span>
+              <span className="text-white font-bold text-sm">R</span>
             </div>
-            <span className="text-foreground font-semibold">Power Config</span>
+            <span className="text-foreground font-semibold">Rules for Power Pages</span>
           </div>
         </div>
 
