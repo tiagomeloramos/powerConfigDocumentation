@@ -176,7 +176,7 @@ export default function CreateRulePage() {
                     alt="Step 1 - Select Table"
                     width={800}
                     height={400}
-                    className="w-full rounded-lg"
+                    className="w-full rounded-lg desktop-fixed-image"
                   />
                 </div>
 
@@ -297,7 +297,7 @@ export default function CreateRulePage() {
                         alt="Step 2 - Multi-step Forms"
                         width={800}
                         height={600}
-                        className="w-full rounded-lg"
+                        className="w-full rounded-lg desktop-fixed-image"
                       />
                     </div>
                     <p className="text-muted-foreground text-sm">
@@ -314,7 +314,7 @@ export default function CreateRulePage() {
                         alt="Step 2 - Basic Forms"
                         width={800}
                         height={600}
-                        className="w-full rounded-lg"
+                        className="w-full rounded-lg desktop-fixed-image"
                       />
                     </div>
                     <p className="text-muted-foreground text-sm">
@@ -389,7 +389,7 @@ export default function CreateRulePage() {
                     alt="Step 3 - Flow Details"
                     width={800}
                     height={600}
-                    className="w-full rounded-lg"
+                    className="w-full rounded-lg desktop-fixed-image"
                   />
                 </div>
 
