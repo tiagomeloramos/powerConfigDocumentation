@@ -17,7 +17,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
       key: "get-started",
       items: [
         { title: "Install", icon: <Play className="h-4 w-4" />, href: "/" },
-        { title: "Creating a Rule", icon: <Zap className="h-4 w-4" />, href: "/first-flow" },
+        { title: "Creating a Rule", icon: <Zap className="h-4 w-4" />, href: "/first-rule" },
       ],
     },
     {
