@@ -1,11 +1,7 @@
 "use client"
-
-import type React from "react"
-
-import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import {Play, Zap, Terminal, ChevronDown, ChevronRight, Variable, Code } from "lucide-react"
+import { Play, Zap, Terminal } from "lucide-react"
 import Link from "next/link"
 
 interface SidebarProps {
@@ -21,7 +17,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
       key: "get-started",
       items: [
         { title: "Install", icon: <Play className="h-4 w-4" />, href: "/" },
-        { title: "Creating a Flow", icon: <Zap className="h-4 w-4" />, href: "/first-flow" },
+        { title: "Creating a Rule", icon: <Zap className="h-4 w-4" />, href: "/first-flow" },
       ],
     },
     {
@@ -37,9 +33,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
   // Check if section contains the current path
   const isSectionActive = (sectionKey: string) => {
     const section = sections.find((s) => s.key === sectionKey)
-    return section?.items.some((item) => 
-      item.href === "/" ? pathname === "/" : pathname.includes(item.href)
-    )
+    return section?.items.some((item) => (item.href === "/" ? pathname === "/" : pathname.includes(item.href)))
   }
 
   if (!isOpen) return null
@@ -76,9 +70,11 @@ export function Sidebar({ isOpen }: SidebarProps) {
                     <Button
                       variant="ghost"
                       className={`w-full justify-start text-sm ${
-                        item.href === "/" ? pathname === "/" : pathname.includes(item.href)
-                          ? "text-theme-primary bg-theme-primary/10"
-                          : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                        item.href === "/"
+                          ? pathname === "/"
+                          : pathname.includes(item.href)
+                            ? "text-theme-primary bg-theme-primary/10"
+                            : "text-muted-foreground hover:text-foreground hover:bg-accent"
                       }`}
                     >
                       {item.icon}
