@@ -493,7 +493,7 @@ export default function CreateRulePage() {
                 <CardHeader className="py-3 px-4">
                   <div className="flex items-center gap-2">
                     <Layers className="h-4 w-4 text-theme-primary" />
-                    <span className="text-foreground font-medium">Choose your Triggers</span>
+                    <span className="text-foreground font-medium">Choose your Trigger</span>
                   </div>
                   <p className="text-muted-foreground text-sm mt-1">
                     Set up when your rule should execute (On Form Load, Field Change or On Form Submit)
